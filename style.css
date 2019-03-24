@@ -1,0 +1,106 @@
+
+html	{
+	font-family: 'AR PL UMing TW', 'Noto Sans Mono CJK TC';
+	font-size: 14pt;
+}
+body{
+	width: 100%;
+    height:100%;
+    overflow:hidden;
+	margin: auto;
+}
+body > h1{
+	text-align: center;
+}
+h2{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 3.5vh;
+    padding-left: 10vw;
+    height: 5vh;
+    display:block;
+    background:black;
+    color: #AAAAAA;
+}
+h2.heading{
+    color:white;
+}
+/*
+output a:link{
+    display:none;
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
+	color: dodgerblue;
+}
+output h2+a:link{	
+	font-weight: bold;
+}
+*/
+
+h3{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 10pt;
+    display:none;
+}
+p{
+	margin: 0;
+    display:none;
+}
+
+
+p.reading{
+    display:block;
+    position:fixed;
+    width:80vw;
+    height:100vh;
+    top:0;
+    padding-left:10vw;
+    padding-right:10vw;
+    background:black;
+    color:#AAAAAA;
+    font-size:3.5vh;
+    overflow-y:scroll;
+
+}
+
+p.reading a{
+    color:#EEEEEE;
+}
+
+p.reading p {
+    display: block;
+}
+
+output h1 {
+	font-size: 3.5vh;
+    height: 5vh;
+	background-color: black;
+	color:white;
+	margin-top: 0;
+	margin-bottom: 0;
+    padding:0;
+    padding-left: 4vh;  
+    display:block;
+
+}
+output {
+    position: absolute;
+    top: -30vh;
+    width:100%;
+}
+
+output h2.unread.sel:before {
+    content: "> + ";
+}
+output h2.sel:before {
+    content: "> 　";
+}
+
+output h2.unread:before {
+    content: "　+ ";
+}
+output h2:before {
+    content: "　　";
+}
